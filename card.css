@@ -1,0 +1,324 @@
+/* Общие стили */ 
+body{
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    min-width: 1200px;
+    color: #151C22;
+    line-height: 21px;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+a {
+    color: inherit;
+}
+/* Стили для хедера */
+
+.main-header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-nav {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding: 0;
+    margin: 0;
+    align-content: flex-start;
+    justify-content: flex-start;
+    
+}
+.main-nav-item {
+    padding: 25px 0;
+    margin-left: 35px;
+    list-style: none;
+    
+}
+.link-item {
+    text-decoration: none;
+}
+.link-logo {
+    cursor: pointer;
+}
+.logo {
+    margin: 0 auto;
+}
+.icon-items {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    align-content: flex-start;
+    justify-content: flex-end;
+    list-style: none;
+}
+.icon-item {
+    padding: 25px 0;
+    margin-left: 35px; 
+}
+/*Карточка товара*/ 
+.card {
+    background-image: linear-gradient(to right, #ffffff 50%, #F1F2F4 50%);
+}
+
+.card-description-text {
+    width: 370px;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: normal;
+}
+.card-description-price {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.submit-btn {
+    border: none;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #151C22;
+    font-size: 16px;
+    line-height: 19px;
+    width: 200px;
+    height: 64px;
+    margin-top: 50px;
+}
+.card-photos-slider-preview {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    margin-right: -20px;
+}
+.card-photos-slider-preview-item {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    height: 660px;
+}
+
+.card-image-column {
+    width: 500px;
+    margin-left: 70px;
+    margin-right: 20px;
+}
+
+.card-text-column {
+    width: 370px;
+    padding: 40px 0 0 70px;
+}
+.card-photos-slider-prev-button {
+    background: url(decoration/Vector\ 3.3.png) no-repeat 50% 50%;
+    border: none;
+    position: relative;
+    top: -450px;
+    left: -50px;
+    width: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.card-photos-slider-next-button {
+    background: url(decoration/Vector\ 3.2.png) no-repeat 0 0;
+    border: none;
+    width: 21px;
+    height: 10px;
+    padding: 20px;
+    position: relative;
+    top: -443px;
+    left: 410px;
+    cursor: pointer;
+}
+
+.card-order-field {
+    margin: 50px 0 40px 0;
+    padding: 0;
+    border: none;
+}
+.card-order-field legend{
+    color: #151C22;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 500;
+}
+
+/*радиокнопки*/
+
+.card-order-field input[name="card-order-color"] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.card-order-field input[id="card-order-color-lightblue"] {
+    background-color: #B0C3C7;
+}
+.card-order-field input[id="card-order-color-darkblue"] {
+    background-color: #3B6392;
+}
+
+.card-order-field input[id="card-order-color-gray"] {
+    background-color: #BFC3C8;
+}
+.card-order-field input[name="card-order-size"] {
+    appearance: none;
+    width: 22px;
+    height: 13px;
+    margin-left: -30px;
+    margin-top: 25px;
+    cursor: pointer;
+    padding: 0 5px;
+}
+.radio-size{
+    color: #727A82;
+}
+/* другие модели */ 
+
+.section-heading {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 37px;
+}
+.view-all {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 21px;
+    border-bottom: 2px solid #151C22;
+    padding-bottom: 6px;
+    text-decoration: none;
+}
+
+.catalog-item {
+    list-style: none;
+}
+
+.catalog-item-link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+.catalog-item-link img {
+    order: -1;
+}
+.catalog-title {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 21px;
+}
+.catalog-price {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+}
+.catalog-likes {
+    margin-top: 120px; 
+    margin-bottom: 100px;
+    padding: 0;
+}
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.catalog-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    margin-right: -30px;
+}
+.catalog-item {
+    width: 270px;
+    margin-bottom: 25px;
+    margin-right: 30px;
+}
+
+/* подвал */ 
+.main-footer {
+    background-color: #151C22;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 21px;
+    padding-top: 50px;
+    padding-bottom: 50px; 
+}
+.main-footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-logo {
+    margin: 0 auto 35px;
+}
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center;
+    width: 525px;
+}
+.footer-nav-item {
+    margin-right: 35px;
+    margin-bottom: 35px;
+    list-style: none;
+}
+.footer-icons {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+}
+.footer-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.facebook {
+    background: url(footer-icons/facebook.svg) no-repeat 50% 50%;
+}
+.instagram {
+    background: url(footer-icons/instagram.svg) no-repeat 50% 50%;;
+}
+.pinterest {
+    background: url(footer-icons/pinterest.svg) no-repeat 50% 50%;;
+}
+.twitter {
+    background: url(footer-icons/twitter.svg) no-repeat 50% 50%;;
+}

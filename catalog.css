@@ -1,0 +1,280 @@
+/* Общие стили */ 
+body{
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    min-width: 1200px;
+    color: #151C22;
+    line-height: 21px;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+a {
+    color: inherit;
+}
+/* Стили для хедера */
+
+.main-header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-nav {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding: 0;
+    margin: 0;
+    align-content: flex-start;
+    justify-content: flex-start;
+    
+}
+.main-nav-item {
+    padding: 25px 0;
+    margin-left: 35px;
+    list-style: none;
+    
+}
+.link-item {
+    text-decoration: none;
+}
+.logo {
+    margin: 0 auto;
+}
+.icon-items {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    align-content: flex-start;
+    justify-content: flex-end;
+    list-style: none;
+}
+.icon-item {
+    padding: 25px 0;
+    margin-left: 35px; 
+}
+/*Стили для блока с хлебными крошками*/
+.catalog-header {
+    background-color: #F1F2F4;
+    margin-bottom: 40px;
+}
+.breadcrumbs {
+    padding: 0;
+    margin: 0;
+}
+.breadcrumbs-item {
+    list-style: none;
+    color: #727A82;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: normal;
+    margin-right: 20px;
+}
+.breadcrumbs-item:last-child {
+    margin-right: 0px;
+}
+
+.breadcrumbs-current {
+    color: #151C22;
+}
+.breadcrumbs-item-link {
+    text-decoration: none;
+}
+.catalog-heading {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: bold;
+    color: #151C22;
+    width: 272px;
+}
+
+.catalog-header-wrapper {
+    display: flex;
+    align-items: flex-start;
+    height: 260px;
+}
+.catalog-text-column {
+    width: 370px;
+    padding: 70px 0 70px 200px;
+}
+.catalog-image-column {
+    width: 400px;
+    padding: 0 50px;
+    background: url(decoration/diagonal-menu.png) no-repeat 5% 95%,
+                url(decoration/diagonal-menu-1.png) no-repeat 55% 0;
+}
+.catalog-header-img-column img {
+    vertical-align: middle;
+  }
+.breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+}
+ /*КАТАЛОГ */ 
+ /*селект */ 
+ .catalog-filter {
+     border: 2px solid #151C22;
+     margin-bottom: 40px;
+     width: 243px;
+     height: 50px;
+     box-sizing: border-box; 
+     font-size: 18px;
+     font-weight: normal;
+     line-height: 22px;
+     padding: 0px 15px;
+     appearance: none;
+     background: url(decoration/select.png) no-repeat 95% 50%;
+ }
+
+.catalog-filter-option {
+    width: 243px;
+    height: 50px;
+    box-sizing: border-box; 
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 22px;
+    padding: 0px 15px;
+}
+ .catalog-filter-wrapper {
+     display: flex;
+     justify-content: flex-end;
+ }
+
+/* основная часть каталога*/ 
+.catalog-item {
+    list-style: none;
+    width: 243px;
+    margin-bottom: 52px;
+    margin-right: 66px;
+}
+.catalog-item-link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+.catalog-item-link img {
+    order: -1;
+}
+.catalog-title {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 21px;
+}
+.catalog-price {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+}
+.catalog-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    margin-right: -66px;
+}
+
+/*счетчик*/ 
+.showed-items-count {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 130px;
+}
+.showed-items-count p {
+    font-size: 24px;
+    line-height: 21px;
+    font-weight: normal;
+    color: #151C22;
+    margin-bottom: 50px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #E5E5E5;
+}
+
+.load-more-btn {
+    background-color: #151C22;
+    color: #FFFFFF;
+    width: 200px;
+    height: 64px;
+    border: none;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* подвал*/ 
+.main-footer {
+    background-color: #151C22;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 21px;
+    padding-top: 50px;
+    padding-bottom: 50px; 
+}
+.main-footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-logo {
+    margin: 0 auto 35px;
+}
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center;
+    width: 525px;
+}
+.footer-nav-item {
+    margin-right: 35px;
+    margin-bottom: 35px;
+    list-style: none;
+}
+.footer-icons {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+}
+.footer-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.facebook {
+    background: url(footer-icons/facebook.svg) no-repeat 50% 50%;
+}
+.instagram {
+    background: url(footer-icons/instagram.svg) no-repeat 50% 50%;;
+}
+.pinterest {
+    background: url(footer-icons/pinterest.svg) no-repeat 50% 50%;;
+}
+.twitter {
+    background: url(footer-icons/twitter.svg) no-repeat 50% 50%;;
+}
