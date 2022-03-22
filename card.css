@@ -310,12 +310,7 @@ a {
     margin-right: 30px;
     cursor: pointer;
 }
-.facebook {
-    background: url(footer-icons/facebook.svg) no-repeat 50% 50%;
-}
-.instagram {
-    background: url(footer-icons/instagram.svg) no-repeat 50% 50%;;
-}
+
 .pinterest {
     background: url(footer-icons/pinterest.svg) no-repeat 50% 50%;;
 }
